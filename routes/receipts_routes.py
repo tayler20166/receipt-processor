@@ -34,7 +34,6 @@ def get_receipt_points(id):
     check_for_uuid(id)
     global global_data
     receipt = receipts.get(id)
-    print(receipt)
     if receipt:
         points = 0
         alphanumeric_len = 0;
