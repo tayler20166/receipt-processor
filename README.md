@@ -14,8 +14,8 @@ Before you begin, ensure you have the following installed on your system:
 ## Cloning the Repository
 To get started, clone the repository using Git:
 ```bash
-git clone https://github.com/yourusername/yourprojectname.git
-cd yourprojectname
+git clone https://github.com/tayler20166/receipt-processor.git
+cd receipt-processor
 ```
 
 ## Building the Docker Image
