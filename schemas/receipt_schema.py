@@ -1,5 +1,5 @@
 from marshmallow import Schema, fields, validate
-from modules.validation.ReceiptItemSchema import ReceiptItemSchema
+from schemas.receipt_item_schema import ReceiptItemSchema
 
 class ReceiptSchema(Schema):
     retailer = fields.Str(required=True, validate=validate.Regexp(r'^[\w\s\-&]+$', error="Invalid retailer format."))
