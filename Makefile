@@ -10,7 +10,7 @@ build:
 	docker build -t $(IMAGE_NAME) .
 
 run:
-	docker run -d -p 80:80 -p 5000:5000 $(IMAGE_NAME)
+	docker run -d -p 80:80 -p 8080:8080 $(IMAGE_NAME)
 
 stop:
 ifeq ($(OS),Linux)
