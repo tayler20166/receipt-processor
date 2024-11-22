@@ -107,7 +107,12 @@ A simple Getter endpoint that looks up the receipt by the ID and returns an obje
 { "points": 32 }
 ```
 
+# Testing
+To ensure that application functions as expected, I have included a suite of tests. These tests cover various functionalities and can be run to verify that changes in the code do not break existing features. (tests must be run from the project directory inside the container) 
+```bash
+  python -m unittest tests/test_app.py
+```
 
-## Contact
+# Contact
 
 If you have any questions or feedback, please contact me at artem.kamkov@gmail.com
