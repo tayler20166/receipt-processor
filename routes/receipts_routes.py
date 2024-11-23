@@ -31,7 +31,10 @@ def process_receipts():
 
 @receipts_bp.route('/receipts/<id>/points')
 def get_receipt_points(id):
-    check_for_uuid(id)
+
+    if not check_for_uuid(id):
+         return jsonify({"error": "No receipt found for that id"}), 404  
+    
     global global_data
     receipt = receipts.get(id)
     if receipt:

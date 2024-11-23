@@ -6,5 +6,4 @@ def count_alphanumeric_filter(s):
 
 def check_for_uuid(string):
     uuid_regex = r'^\S+$'
-    if not re.match(uuid_regex, string):
-        abort(404, description="No receipt found for that id")
+    return re.match(uuid_regex, string)
